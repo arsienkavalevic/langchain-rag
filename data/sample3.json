@@ -1,0 +1,46 @@
+{
+    "result": [
+      {
+        "status": "disabled",
+        "name": {
+          "first": "Aimee",
+          "middle": "Sasha",
+          "last": "Bartoletti"
+        },
+        "username": "Aimee-Bartoletti",
+        "password": "0chSbDZvFrQfPyl",
+        "emails": [
+          "Maeve_Ryan33@gmail.com",
+          "Eleanore_Langosh@example.com"
+        ],
+        "phoneNumber": "579-568-3448 x8898",
+        "location": {
+          "street": "6690 Fisher Viaduct",
+          "city": "Westonstad",
+          "state": "Tennessee",
+          "country": "Kenya",
+          "zip": "74280-4534",
+          "coordinates": {
+            "latitude": -42.3578,
+            "longitude": -173.873
+          }
+        },
+        "website": "https://surprised-rehospitalisation.org",
+        "domain": "capital-hype.info",
+        "job": {
+          "title": "Dynamic Mobility Consultant",
+          "descriptor": "Central",
+          "area": "Data",
+          "type": "Consultant",
+          "company": "Streich - Tromp"
+        },
+        "creditCard": {
+          "number": "3461-809699-79221",
+          "cvv": "845",
+          "issuer": "mastercard"
+        },
+        "uuid": "aaa3ef02-e760-4a6b-8682-5d320b62b903",
+        "objectId": "664c8a2f00977e5ac0c5eadc"
+      }
+    ]
+  }

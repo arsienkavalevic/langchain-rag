@@ -1,0 +1,46 @@
+{
+    "result": [
+      {
+        "status": "active",
+        "name": {
+          "first": "Mckenzie",
+          "middle": "Kyle",
+          "last": "Stracke"
+        },
+        "username": "Mckenzie-Stracke",
+        "password": "2LInqNoUNsHR3n0",
+        "emails": [
+          "Colleen.McKenzie@gmail.com",
+          "Chanel_Runolfsdottir51@gmail.com"
+        ],
+        "phoneNumber": "229.515.8754 x07042",
+        "location": {
+          "street": "289 Gislason Hollow",
+          "city": "Felipashire",
+          "state": "Utah",
+          "country": "Slovakia",
+          "zip": "81687",
+          "coordinates": {
+            "latitude": 17.6152,
+            "longitude": 9.9616
+          }
+        },
+        "website": "https://joyful-eve.biz/",
+        "domain": "natural-price.org",
+        "job": {
+          "title": "Forward Applications Strategist",
+          "descriptor": "Chief",
+          "area": "Brand",
+          "type": "Director",
+          "company": "Grimes, Kihn and Homenick"
+        },
+        "creditCard": {
+          "number": "5484-4142-5472-7024",
+          "cvv": "147",
+          "issuer": "maestro"
+        },
+        "uuid": "3e74be36-acf6-4dbb-aed0-6d60ab935fe2",
+        "objectId": "664c8a1400977e5ac0c5eada"
+      }
+    ]
+  }

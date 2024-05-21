@@ -1,0 +1,46 @@
+{
+    "result": [
+      {
+        "status": "active",
+        "name": {
+          "first": "Rubie",
+          "middle": "River",
+          "last": "Collins"
+        },
+        "username": "Rubie-Collins",
+        "password": "erM2x2Q9lzHSfTu",
+        "emails": [
+          "Damien_King60@example.com",
+          "Ron_Rodriguez@gmail.com"
+        ],
+        "phoneNumber": "1-406-455-1897 x184",
+        "location": {
+          "street": "23470 Aiden Spring",
+          "city": "Plainfield",
+          "state": "Kentucky",
+          "country": "Barbados",
+          "zip": "81003-7351",
+          "coordinates": {
+            "latitude": 54.863,
+            "longitude": 42.8811
+          }
+        },
+        "website": "https://nonstop-cousin.net",
+        "domain": "good-natured-mill.info",
+        "job": {
+          "title": "Investor Integration Producer",
+          "descriptor": "Human",
+          "area": "Security",
+          "type": "Orchestrator",
+          "company": "Metz, Schiller and Kihn"
+        },
+        "creditCard": {
+          "number": "5020050012963351",
+          "cvv": "877",
+          "issuer": "diners_club"
+        },
+        "uuid": "652714a5-90db-414e-bd52-ffc49bbadc0c",
+        "objectId": "664c8a2300977e5ac0c5eadb"
+      }
+    ]
+  }
