@@ -10,26 +10,26 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 
-# API Key
-os.environ['OPENAI_API_KEY'] = <your-api-key>
-
-# Paths
-CHROMA_PATH='../chroma'
-DATA_PATH='../data/'
+# Configurable variables
+openai_api_key = os.environ.get('OPENAI_API_KEY')
+model_name = os.environ.get('MODEL_NAME')
+temperature = os.environ.get('TEMPERATURE')
+chunk_size = os.environ.get('CHUNK_SIZE')
+data_path = os.environ.get('DATA_PATH')
 
 #### INDEXING ####
 
 # Load Documents
 txt_paths = [
-    DATA_PATH + 'sample1.txt',
-    DATA_PATH + 'sample2.txt',
-    DATA_PATH + 'sample3.txt'
+    data_path + 'sample1.txt',
+    data_path + 'sample2.txt',
+    data_path + 'sample3.txt'
 ]
 
 json_paths = [
-    DATA_PATH + 'sample1.json',
-    DATA_PATH + 'sample2.json',
-    DATA_PATH + 'sample3.json'
+    data_path + 'sample1.json',
+    data_path + 'sample2.json',
+    data_path + 'sample3.json'
 ]
 
 txts = [TextLoader(path).load() for path in txt_paths]
@@ -42,12 +42,12 @@ for path in json_paths:
 
 # Split
 text_splitter = RecursiveCharacterTextSplitter(
-    chunk_size=2000, chunk_overlap=0
+    chunk_size=chunk_size
 )
 txt_chunks = text_splitter.split_documents(txt_docs)
 
 json_splitter = RecursiveJsonSplitter(
-    max_chunk_size=2000
+    max_chunk_size=chunk_size
 )
 json_chunks = json_splitter.create_documents(json_docs, ensure_ascii=False)
 
@@ -65,7 +65,7 @@ retriever = vectorstore.as_retriever()
 prompt = hub.pull("rlm/rag-prompt")
 
 # LLM
-llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0)
+llm = ChatOpenAI(model_name=model_name, temperature=temperature)
 
 # Post-processing
 def format_docs(docs):
